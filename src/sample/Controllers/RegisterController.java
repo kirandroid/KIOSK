@@ -18,7 +18,7 @@ public class RegisterController {
 
     @FXML
     void RegisteClicked(ActionEvent event) {
-        System.out.println("Hello"+ Username.getText());
+        System.out.println("Hi "+ Username.getText()+", your Email is = "+Email.getText());
     }
 
 
