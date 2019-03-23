@@ -5,12 +5,18 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import okhttp3.OkHttpClient;
+import retrofit2.Call;
+import retrofit2.Retrofit;
+import sample.Data.ApiService;
+
+import java.sql.Wrapper;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("Layouts/LoginLayout.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Layouts/screen.fxml"));
         primaryStage.setTitle("KIOSK");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
@@ -19,5 +25,15 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+//        Moshi moshi = new Moshi.Builder().build();
+//        OkHttpClient client = new
+//        Retrofit retrofit = new Retrofit.Builder()
+//                .baseUrl("https://valens.serveo.net/")
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .build();
+//
+//        ApiService apiService = retrofit.create(ApiService.class);
+
     }
+
 }
