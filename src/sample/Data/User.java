@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 public class User {
 
     @SerializedName("firstname")
-    private String firtName;
+    private String firstName;
 
     @SerializedName("lastname")
     private String lastName;
@@ -13,8 +13,8 @@ public class User {
     @SerializedName("username")
     private String userName;
 
-    public String getFirtName(){
-        return firtName;
+    public String getFirstName(){
+        return firstName;
     }
 
     public String getLastName() {
